@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Pirnt out number 0 to 9 without char type
+ * main - Pirnt out number 0 to 9 without char type
  * Return: Always return 0
  */
 
