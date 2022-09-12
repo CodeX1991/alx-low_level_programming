@@ -10,3 +10,4 @@
 9-print_comb.c: Write a program that prints all possible combinations of single-digit numbers.
 100-print_comb.c: Write a program that prints all possible different combinations of two digits. Numbers must be separated by ,, followed by a space and the two digits must be different.
 101-print_comb4.c:  a program that prints all possible different combinations of three digits.
+102-print_comb5.c: Write a program that prints all possible combinations of two two-digit numbers.
