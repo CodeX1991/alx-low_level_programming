@@ -1,4 +1,4 @@
-#include "_putchar.h"
+#include "main.h"
 
 /**
  * main - This program prints out _putchar to the  stdout
@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	_putchar('-');
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
