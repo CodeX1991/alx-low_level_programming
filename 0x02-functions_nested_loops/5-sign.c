@@ -7,6 +7,7 @@
  * 0 for number equals 0
  * -1 for number less than 0
  *
+ * @n: The entered data to be checked
  */
 
 int print_sign(int n)
