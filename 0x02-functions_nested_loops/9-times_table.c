@@ -15,7 +15,6 @@ void times_table(void)
 		for (num2 = 0; num2 <= 9; num2++)
 		{
 			result = num1 * num2;
-			
 			if (result > 9)
 			{
 				_putchar((result / 10) + '0');
@@ -27,6 +26,7 @@ void times_table(void)
 			}
 			else if (result == 0 || result <= 9)
 			{
+				_putchar(' ');
 				_putchar(result + '0');
 				if (num2 == 9)
 					continue;
