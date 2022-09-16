@@ -24,8 +24,6 @@ void times_table(void)
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
-				if (num2 == 9)
-					continue;
 			}
 			else if (result == 0 || result <= 9)
 			{
