@@ -3,7 +3,7 @@
 /**
  * main - Prints out the sum of the multples of 3 or below 1024
  *
- * Return: sum
+ * Return: 0
  *
  */
 
@@ -18,7 +18,6 @@ int main(void)
 			sum = sum + mult;
 		}
 	}
-	
 	printf("%d\n", sum);
-	return (sum);
+	return (0);
 }
