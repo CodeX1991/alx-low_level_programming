@@ -14,7 +14,7 @@ int main(void)
 	sum = 0;
 
 	printf("%lu, %lu, ", fbn1, fbn2);
-	for (count = 0; count < 49; count++)
+	for (count = 0; count < 48; count++)
 	{
 		sum = fbn1 + fbn2;
 		printf("%lu, ", sum);
