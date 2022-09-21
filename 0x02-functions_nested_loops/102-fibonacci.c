@@ -8,7 +8,6 @@ int main(void)
 {
 	int count;
 	unsigned long fbn1, fbn2, sum;
-	
 	fbn1 = 0;
 	fbn2 = 1;
 
