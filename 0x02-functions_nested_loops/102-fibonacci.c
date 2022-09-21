@@ -6,16 +6,18 @@
 
 int main(void)
 {
-	int fbn1, fbn2, sum, count;
+	unsigned long fbn1, fbn2, sum;
+       	int count;
+
 	fbn1 = 1;
 	fbn2 = 2;
 	sum = 0;
 
-	printf("%d, %d, ", fbn1, fbn2);
-	for (count = 0; count < 50; count++)
+	printf("%lu, %lu, ", fbn1, fbn2);
+	for (count = 0; count < 49; count++)
 	{
 		sum = fbn1 + fbn2;
-		printf("%d, ", sum);
+		printf("%lu, ", sum);
 
 		fbn1 = fbn2;
 		fbn2 = sum;
