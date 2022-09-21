@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - A program that finds and print the sum
+ * of the even-valued terms.
+ * Return: 0
+ */
+
+int main(void)
+{
+	int count;
+	unsigned long fbn1 = 0, fbn2 = 1, sum, total_sum = 0;
+
+	for (count = 0; count < 4000000; count++)
+	{
+		sum = fbn1 + fbn2;
+
+		if (sum % 2 == 0)
+			total_sum = total_sum + sum;
+		else
+			total_sum = 0 + sum;
+
+		fbn1 = fbn2;
+		fbn2 = sum;
+	}
+	printf("%lu\n", total_sum);
+	return (0);
+}
+

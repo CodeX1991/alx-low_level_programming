@@ -13,3 +13,4 @@
 101-natural.c: Write a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
 0-isupper.c:  a function that checks for uppercase character.
 102-fibonacci.c: a program that prints the first 50 Fibonacci numbers, starting with 1 and 2
+103-fibonacci.c write a program that finds and prints the sum of the even-valued terms, followed by a new line.
