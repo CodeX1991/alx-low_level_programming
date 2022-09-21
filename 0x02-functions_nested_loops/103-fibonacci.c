@@ -25,7 +25,7 @@ int main(void)
 		fbn1 = fbn2;
 		fbn2 = sum;
 	}
-	printf("%lu\n", total_sum);
+	printf("%.0f\n", total_sum);
 	return (0);
 }
 
