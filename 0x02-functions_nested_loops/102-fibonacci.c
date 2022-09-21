@@ -9,18 +9,22 @@ int main(void)
 	unsigned long fbn1, fbn2, sum;
        	int count;
 
-	fbn1 = 1;
-	fbn2 = 2;
+	fbn1 = 0;
+	fbn2 = 1;
 
-	printf("%lu, %lu, ", fbn1, fbn2);
-	for (count = 0; count < 48; count++)
+	for (count = 0; count < 50; count++)
 	{
 		sum = fbn1 + fbn2;
 		printf("%lu, ", sum);
 
 		fbn1 = fbn2;
 		fbn2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(",");
 	}
-	printf("\n");
+
 	return (0);
 }
