@@ -11,7 +11,6 @@ int main(void)
 
 	fbn1 = 1;
 	fbn2 = 2;
-	sum = 0;
 
 	printf("%lu, %lu, ", fbn1, fbn2);
 	for (count = 0; count < 48; count++)
