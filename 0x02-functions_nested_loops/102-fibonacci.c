@@ -6,16 +6,16 @@
 
 int main(void)
 {
-	unsigned long fbn1, fbn2, sum;
-       	int count;
-
+	int count;
+	unsigned fbn1, fbn2, sum;
+	
 	fbn1 = 0;
 	fbn2 = 1;
 
 	for (count = 0; count < 50; count++)
 	{
 		sum = fbn1 + fbn2;
-		printf("%lu, ", sum);
+		printf("%lu", sum);
 
 		fbn1 = fbn2;
 		fbn2 = sum;
@@ -23,7 +23,7 @@ int main(void)
 		if (count == 49)
 			printf("\n");
 		else
-			printf(",");
+			printf(", ");
 	}
 
 	return (0);
