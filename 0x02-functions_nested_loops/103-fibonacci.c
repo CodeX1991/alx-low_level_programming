@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned long fbn1 = 0, fbn2 = 1, sum;
-	float total_sum = 0;
+	float total_sum;
 
 	while (1)
 	{
@@ -17,15 +17,15 @@ int main(void)
 		if (sum > 4000000)
 			break;
 
-		if (sum % 2 == 0)
+		if ((sum % 2) == 0)
 			total_sum = total_sum + sum;
-		else
-			total_sum = 0 + sum;
+
 
 		fbn1 = fbn2;
 		fbn2 = sum;
 	}
 	printf("%.0f\n", total_sum);
+
 	return (0);
 }
 
