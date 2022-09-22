@@ -37,7 +37,6 @@ int main(void)
 		printf("%lu%lu", half1, half2);
 		if (count != 98)
 			printf(", ");
-		
 		fbn1_half1 = fbn2_half1;
 		fbn1_half2 = fbn2_half2;
 		fbn2_half1 = half1;
