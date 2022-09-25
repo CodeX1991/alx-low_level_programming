@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * print_rev - Prints a string in revise order
@@ -7,9 +6,11 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i, j, len = 0;
 
-	for (i = strlen(s); s[i] >= 0; --i)
-		_putchar(s[i]);
+	for (i = 0; s[i] != '\0'; ++i)
+		len += 1;
+	for (j = len - 1; j >= 0; --j)
+		_putchar(s[j]);
 	_putchar('\n');
 }
