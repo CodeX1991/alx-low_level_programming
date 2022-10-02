@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int i, j;
-	char str[500];
+	char str[1000];
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
