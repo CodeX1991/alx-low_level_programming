@@ -3,6 +3,8 @@
 
 /**
  * main - The program prints the name of the programm: ./mynameis
+ * @argc: The count argument
+ * @argv: The pointer to the array
  * Return: 0
  */
 int main(int argc, char *argv[])
