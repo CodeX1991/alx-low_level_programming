@@ -4,7 +4,7 @@
 /**
  * main - Prints the numbers from 1 to 100
  * But for multiples of three print Fizz
- * for multiples of five print Buzz and 
+ * for multiples of five print Buzz and
  * for numbers which are multiples of both 3 and 5 print FizzBuzz
  *
  * Return: 0
@@ -12,7 +12,7 @@
 int main(void)
 {
 	int num;
-	
+
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 15 == 0)
