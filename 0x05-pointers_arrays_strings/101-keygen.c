@@ -7,11 +7,11 @@
  * passwordGenerator - Generator of a password
  * @N: The length of the password
  */
-void passwordGenerator(int N)
+void passwordGenerator()
 {
 	int i;
 
-	char password [11];
+	char password [10];
 
 	char *digits = "0123456789";
 	int digits_len = strlen(digits);
@@ -27,7 +27,7 @@ void passwordGenerator(int N)
 
 	srand(time(NULL) * getpid());
 
-	for (i = 0; i < N; i++)
+	for (i = 0; i < 10; i++)
 	{
 		int char_type = rand() % 4;
 
@@ -40,6 +40,15 @@ void passwordGenerator(int N)
 		else
 			password[i] = symbols[rand() % symbols_len];
 	}
-	password[N] = '\0';
+	password[10] = '\0';
 	printf("Password: %s\n", password);
+}
+/**
+ * main - check the code
+ * Return: 0 on Succes
+ */
+int main(void)
+{
+	passwordGenerator();
+	return (0);
 }
