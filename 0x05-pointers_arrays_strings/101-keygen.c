@@ -9,8 +9,9 @@
  */
 void passwordGenerator(int N)
 {
+	int i;
 
-	char password [N + 1];
+	char password [11];
 
 	char *digits = "0123456789";
 	int digits_len = strlen(digits);
@@ -26,7 +27,7 @@ void passwordGenerator(int N)
 
 	srand(time(NULL) * getpid());
 
-	for (int i = 0; i < N; i++)
+	for (i = 0; i < N; i++)
 	{
 		int char_type = rand() % 4;
 
