@@ -4,3 +4,4 @@ Learning the trick of recursion with pratical examples
 2-strlen_recursion: A function that returns the length of a string using recursion
 3-factorial: A function that returns the fctorial of a given number
 4-pow_recursion.c: A function that returns the valur of x raised to the power of y
+6-is_prime_number.c: Contain a funtion that check for prime numbers, return 1 on success otherwise 0
