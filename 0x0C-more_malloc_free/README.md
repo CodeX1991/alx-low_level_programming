@@ -3,3 +3,4 @@ Learning more on malloc or memory management
 1-string_nconcat.c:A function that concatenates two strings
 2-calloc.c: A function that allocates memory for an array, using malloc
 3-array_range.c: A function that creates an array of integers
+100-realloc.c: A function that realloctatess a memory block using malloc and free
