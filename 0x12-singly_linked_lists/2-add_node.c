@@ -39,7 +39,7 @@ list_t *add_node(list_t **head, const char *str)
 		ptr->next = NULL;
 		ptr->next = *head;
 		*head = ptr;
-		return (*head);
+		return (ptr);
 	}
 
 	return (0);
