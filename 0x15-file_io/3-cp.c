@@ -7,7 +7,7 @@
  */
 void copy_file(const char *src, const char *dest)
 {
-	int fd, fd1, fd2, fd3, fd4;
+	int fd, fd1, fd2, fd3, fd4, fd5;
 	char buffer[1024];
 
 	fd = open(src, O_RDONLY);
