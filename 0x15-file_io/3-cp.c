@@ -39,7 +39,8 @@ void copy_file(const char *src, const char *dest)
 	}
 
 	fd4 = close(fd1);
-	if (fd4 == -1)
+	fd5 = close(fd);
+	if (fd4 == -1 || fd5 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", fd4);
 		exit(100);
