@@ -12,7 +12,11 @@
 int main(int argc, char *argv[])
 {
 	if (argc == 1)
+	{
 		printf("Error");
+		printf("\n");
+		return (1);
+	}
 	else
 		printf("%d", atoi(argv[1]) * atoi(argv[2]));
 	printf("\n");
