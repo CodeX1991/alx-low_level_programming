@@ -15,5 +15,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _sqrt_finder(int n, int guess);
 int prime_number(int n, int idx);
+int check_palindrome(char *s, int len, int idx);
 
 #endif /* MAIN_H isdef */
