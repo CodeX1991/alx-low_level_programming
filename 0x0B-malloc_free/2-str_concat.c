@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 
 	strlen_1 = _strlen_recursion(s1);
 	strlen_2 = _strlen_recursion(s2);
-	concat_str = malloc(sizeof(char) * (strlen_1 + strlen_2));
+	concat_str = malloc(sizeof(char) * (strlen_1 + strlen_2) + 1);
 
 	if (concat_str == NULL)
 		return (NULL);
