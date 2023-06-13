@@ -17,10 +17,12 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 
 	strlen_1 = _strlen_recursion(s1);
 	strlen_2 = _strlen_recursion(s2);
-	concat_str = malloc(sizeof(char) * (strlen_1 + strlen_2 - 1));
+	concat_str = malloc(sizeof(char) * (strlen_1 + strlen_2));
 
 	if (concat_str == NULL)
 		return (NULL);
