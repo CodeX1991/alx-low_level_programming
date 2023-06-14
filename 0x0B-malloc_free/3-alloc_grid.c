@@ -2,8 +2,8 @@
 
 /**
  * alloc_grid - returns a pointer to a 2 dimensional of integers
- * @width: the row size of the array
- * @height: the col size of the array
+ * @width: the col size of the array
+ * @height: the row size of the array
  *
  * Return: pointer to the array is successful
  * otherwise NULL
