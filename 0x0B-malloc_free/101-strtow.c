@@ -73,10 +73,14 @@ int word_len(char *str)
 int count_word(char *str)
 {
 	int idx, num_word = 0;
+	int len = 0;
 
-	for (idx = 0; str[idx]; idx++)
+	for (idx = 0; *(str + idx); idx++)
+		len++;
+
+	for (idx = 0; idx < len; idx++)
 	{
-		if (str[idx] != ' ')
+		if (*(str + idx) != ' ')
 		{
 			num_word++;
 			idx += word_len(str + idx);
