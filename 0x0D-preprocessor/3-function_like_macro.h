@@ -1,5 +1,4 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef ABS
 
 #define ABS(x) ((x < 0) ? (-x) : (x))
 
