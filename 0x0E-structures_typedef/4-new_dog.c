@@ -14,11 +14,12 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *user;
+	int name_len, owner_len;
 
 	if (name != NULL && owner != NULL)
 	{
-		int name_len = _strlen_recursion(name);
-		int owner_len = _strlen_recursion(owner);
+		name_len = _strlen_recursion(name) + 1;
+		owner_len = _strlen_recursion(owner) + 1;
 
 		user = malloc(sizeof(dog_t));
 
