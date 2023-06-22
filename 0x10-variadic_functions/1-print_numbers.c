@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - prints numbers, followed by a new line
- * @seperator: string to be printed between number
+ * @separator: string to be printed between number
  * @n: the number size to be printed
  */
 
@@ -12,9 +12,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int j;
 
-	if (separator == NULL)
-		return;
 	va_start(args, n);
+
+	if (separator == NULL)
+		print_number(va_arg(args, int));
 
 	for (i = 0; i < n; i++)
 	{
