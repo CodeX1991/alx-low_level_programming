@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * add_node - prints all the len=ments of a list_t list
+ * add_node - new node at the beginning of a list_t list
  * @head: double pointer to the struct created
  * @str: string to add
  * Return: the number of node
