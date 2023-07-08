@@ -12,10 +12,9 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit_status;
 
-	if (n != 0)
-	{
-		bit_status = (n >> index) & 1;
-		return (bit_status);
-	}
-	return (-1);
+	if (n == 0 || index >= (sizeof(unsigned long int) * 8))
+		return (-1);
+
+	bit_status = (n >> index) & 1;
+	return (bit_status);
 }
