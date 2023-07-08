@@ -12,5 +12,6 @@ int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 void _print_rev_recursion(unsigned long int n);
 unsigned int count_set_bit(unsigned long int n);
+int get_endianness(void);
 
 #endif /* if MAIN_H isdef */
