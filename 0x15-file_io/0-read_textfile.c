@@ -23,9 +23,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	r = read(fd, buffer, letters);
-	w = write(1, buffer, r);
+	if (r != (ssize_t)letters)
+		w = write(2, buffer, r);
+	else
+		w = write(1, buffer, r);
 
-	if ((fd == -1) | (r == -1) | (w == -1) | (w != r))
+	if ((fd == -1) | (r == -1) | (w == -1))
 	{
 		free(buffer);
 		return (0);
