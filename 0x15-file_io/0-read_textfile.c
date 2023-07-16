@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	r = read(fd, buffer, letters);
-	if (r < (ssize_t)letters || r > (ssize_t)letters)
+	if (r != (ssize_t)letters && letters < 10000)
 		w = write(2, buffer, r);
 	else
 		w = write(1, buffer, r);
